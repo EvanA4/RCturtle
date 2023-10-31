@@ -19,6 +19,6 @@ Change into the directory you want the project folder in<br>
 
 ### 3. Create Vite Project and Add Dependencies
 `yarn create vite client --template react`<br>
-`mv src/* client/src`<br>
+`mv -force src/* client/src`<br>
 `cd client`<br>
 `yarn add three @types/three @react-three/fiber @react-three/drei react-use-websocket`
