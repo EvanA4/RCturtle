@@ -5,7 +5,7 @@ Use a local websocket server to remote control a CC: Tweaked Mining Crafty Turtl
 ## Instructions
 
 > [!IMPORTANT]
-> Ensure you have both NodeJS and Yarn installed.
+> Ensure you have both NodeJS and Yarn installed. Instructions assume you are using Windows, although Linux and macOS are likely similar.
 
 ### 1. Clone Git repository
 Change into the directory you want the project folder in<br>
