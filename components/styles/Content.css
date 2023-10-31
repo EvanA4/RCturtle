@@ -1,0 +1,74 @@
+.content,
+.display,
+.overlay {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+}
+
+.display {
+    position: relative;
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+}
+
+.overlay {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2fr 3fr;
+}
+
+.spfc,
+.gbl,
+.stts {
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    /* background-color: rgb(34, 34, 34); */
+    background-color: transparent;
+    border: 1px solid rgb(59, 59, 59);
+    margin: 15px;
+}
+
+.spfc:hover,
+.gbl:hover,
+.stts:hover {
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.spfc {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.gbl {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+}
+
+.stts {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+legend {
+    margin-left: 15px;
+    padding: 0 10px 0 10px;
+    color: rgb(134, 134, 134);
+}
+
+.spfc:hover legend,
+.gbl:hover legend,
+.stts:hover legend {
+    color: rgb(226, 226, 226);
+}

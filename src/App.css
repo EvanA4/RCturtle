@@ -1,0 +1,35 @@
+html,
+body,
+#root {
+  background-color: black;
+  height: 100%;
+  width: 1920px;
+}
+
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content auto;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 44, 44);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(61, 61, 61);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgb(14, 14, 14);
+}

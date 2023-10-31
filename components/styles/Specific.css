@@ -1,0 +1,21 @@
+.specific {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.mv,
+.act {
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.mv:hover,
+.act:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+.mv {
+    margin-right: 0;
+}

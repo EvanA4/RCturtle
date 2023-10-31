@@ -1,0 +1,57 @@
+.actions {
+    margin: 10px 20px 0px 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    grid-template-rows: 12fr 6fr 7fr;
+}
+
+/* SUCK and DROP */
+
+.suck,
+.drop {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#ac {
+    color: rgb(255, 255, 0);
+    border: 1px solid rgb(255, 255, 0);
+}
+
+#ac:hover {
+    background-color: rgb(53, 53, 0);
+    color: rgb(255, 255, 191);
+    border: 1px solid rgb(255, 255, 191);
+}
+
+/* SELECT */
+
+.select {
+    height: 40px;
+    background-color: black;
+    color: rgb(255, 255, 0);
+    border: 1px solid rgb(255, 255, 0);
+    border-radius: 20px;
+}
+
+.select:hover {
+    background-color: rgb(53, 53, 0);
+    color: rgb(255, 255, 191);
+    border: 1px solid rgb(255, 255, 191);
+}
+
+/* SLOT or COUNT */
+
+.actions input {
+    background-color: black;
+    color: rgb(209, 209, 209);
+    margin: 10px auto auto auto;
+    /* border: 1px solid rgb(59, 59, 59); */
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 10px;
+    padding: 5px 0 5px 10px;
+    grid-column: 1 / 3;
+}

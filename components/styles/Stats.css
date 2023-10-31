@@ -1,0 +1,68 @@
+.statistics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    margin: 10px 15px 0px 15px;
+
+    display: grid;
+    grid-template-rows: auto min-content;
+}
+
+.statistics:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+/* inventory */
+
+.inv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 300px;
+    height: 300px;
+    margin: 15px 0px 18px 18px;
+    grid-row: 2;
+}
+
+.slot {
+    display: flex;
+    border: 1px solid rgb(80, 80, 80);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 17, 17);
+}
+
+.slot p {
+    font-size: large;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    color: white;
+}
+
+/* TEXTSTATS */
+
+.textstats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 7px;
+}
+
+.textstats p {
+    color: rgb(161, 161, 161);
+    width: auto;
+    margin: auto auto 0 17px;
+}
+
+#cpuLabel {
+    grid-column: 1 / 3;
+}
+
+#cpuLabel b {
+    color: rgb(250, 250, 250);
+}
