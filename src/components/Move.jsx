@@ -48,7 +48,7 @@ const Move = () => {
                 <button className='leftHand'
                     onClick={() => { sendCmd("{\"command\": \"equipLeft\"}") }}>EQUIP<br />LEFT</button>
                 <button className='rightHand'
-                    onClick={() => { sendCmd("{\"command\": \"equipRight\"}") }}>EQUIP RIGHT</button>
+                    onClick={() => { sendCmd("{\"command\": \"equipRight\"}") }}>EQUIP<br />RIGHT</button>
             </div>
         </div>
     );
