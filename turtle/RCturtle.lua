@@ -666,7 +666,9 @@ function Main()
     local isSolid, data = turtle.inspectDown()
     if (isSolid) then
         if (data.name == "computercraft:disk_drive") then
-            fs.copy('disk/startup.lua', 'startup.lua')
+            if not fs.exists('startup.lua') then
+                fs.copy('disk/startup.lua', 'startup.lua')
+            end
             turtle.suckDown()
             turtle.digDown()
         end
