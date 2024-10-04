@@ -16,37 +16,28 @@ When a turtle turns on, it automatically runs `startup.lua`, even if the program
 <br>
 
 ## Instructions
-### 1. Clone Git repository
-Change into the directory you want the project folder in<br>
-`git clone https://github.com/EvanA4/RCturtle.git`<br>
-`cd RCturtle`<br>
 
-### 2. Add Websocket Server Dependencies
-`cd server`<br>
-`yarn add ws`<br>
-`cd ..`<br>
-
-### 3. Create Vite Project and Add Dependencies
-`yarn create vite client --template react`<br>
-`mv -force src/* client/src`<br>
-`rm src`<br>
-`cd client`<br>
-`yarn add three @types/three @react-three/fiber @react-three/drei react-use-websocket`<br>
-
-### 4. Set Up Minecraft World
+### 1. Set Up Minecraft World
 Create a Minecraft world with CC: Tweaked installed.<br>
 Find your world in the `saves` directory of `.minecraft`<br>
 Go into the `serverconfig` folder and open `computercraft-server.toml` in a text editor<br>
 Find and delete the line which reads `action = "deny"` (around line 118 as of 1.20.1 10/31/2023)<br>
 
-### 5. Run Client and Server
-Create a new terminal in the main RCturtle folder:<br>
+### 2. Clone Git Repository
+Change into the directory you want the project folder in<br>
+`git clone https://github.com/EvanA4/RCturtle.git`<br>
+`cd RCturtle`<br>
+
+### 3. Start WebSocket Server
 `cd server`<br>
+`yarn`<br>
 `node server.js`<br>
 
-In your original terminal:<br>
-`yarn run dev`<br>
-Hit 'o' on the keyboard to start up the application<br>
+### 4. Start Vite Server
+Open a new terminal and change directories into `client` directory.<br>
+`yarn`<br>
+`yarn dev`<br>
+Enter 'o' on the keyboard to start up the application<br>
 
 ### 6. Set Up Turtle
 Open the same world in Minecraft and craft a Mining Crafty Turtle<br>
